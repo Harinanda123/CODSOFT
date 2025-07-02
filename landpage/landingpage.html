@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fffaf5;
+            color: #333;
+        }
+        .header {
+            background-color: rgb(255, 153, 37);
+            height: 100px;
+            padding: 10px;
+            color: whitesmoke;
+            margin: 0;
+        }
+        .header h1 {
+            margin: 25px;
+            color: white;
+            font-family: 'Times New Roman', serif;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: right;
+            gap: 25px;
+            padding: 20px;
+            margin: 0;
+            background-color: whitesmoke;
+        }
+        ul li a {
+            text-decoration: underline;
+            color: #333;
+            font-weight: bold;
+        }
+        .btn {
+            display: flex;
+            justify-content: right;
+            gap: 30px;
+            padding: 10px;
+            color: orange;
+        }
+        .button1 {
+            padding: 8px 16px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 40px 60px;
+            background-color: #ffe0c7;
+            gap: 30px;
+        }
+        .h2 {
+            justify-content: left;
+            min-width: 300px;
+        }
+        .ab {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        .bc {
+            width: 160px;
+            text-align: center;
+        }
+        .bc img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .paragraph-container {
+            position: relative;
+            max-height: 120px;
+            overflow: hidden;
+            background-color: #fffaf0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            font-family: cursive;
+            color: #333;
+            font-size: 14px;
+        }
+        .paragraph-container input {
+            display: none;
+        }
+        .paragraph-container .fade-overlay {
+            content: "";
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to bottom, rgba(255, 250, 240, 0), #fffaf0);
+            pointer-events: none;
+        }
+        .paragraph-container .read-more-btn {
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+            background-color: #ffa94d;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        
+        .read-more-btn::after {
+            content: "Read More";
+        }
+        .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 250px;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .features {
+            background-color: #fff8f2;
+            text-align: center;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        .features h2 {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        .features ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            gap: 30px;
+            padding: 0;
+        }
+        .features li {
+            width: 200px;
+            background-color: #ffe0c7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background-color: white;
+            height: 200px;
+        }
+        .h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+        }
+        .image6 {
+            display: flex;
+            justify-content: center;
+        }
+        .image6 img {
+            height: auto;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>JEWEL WORLD</h1>
+    </div>
+    <ul>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Package</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="btn">
+        <button class="button1">Sign In</button>
+        <button class="button1">Sign Up</button>
+    </div>
+    <div class="content">
+        <div class="h2">
+            <h1>Explore Our Collections</h1>
+            <div class="ab">
+                <div class="bc">
+                    <img src="istockphoto-176830145-612x612.jpg" alt="Description">
+                    <div class="paragraph-container">
+                        <input type="checkbox" id="read-more1">
+                        <p class="paragraph-text">Our business is dedicated to crafting and offering a diverse collection of rings that cater to every style and occasion.</p>
+                        <div class="fade-overlay"></div>
+                        <label for="read-more1" class="read-more-btn"></label>
+                    </div>
+                </div>
+                <div class="bc">
+                    <img src="2005500901m.jpg" alt="Description">
+                    <div class="paragraph-container">
+                        <input type="checkbox" id="read-more2">
+                        <p class="paragraph-text">This exquisite necklace is a masterpiece of elegance and sophistication. Crafted with precision and attention to detail, it embodies timeless beauty.</p>
+                        <div class="fade-overlay"></div>
+                        <label for="read-more2" class="read-more-btn"></label>
+                    </div>
+                </div>
+                <div class="bc">
+                    <img src="jewelove-single-line-diamond-bangles-pair-for-women-jl-au-102-41424752673009.webp" alt="Description">
+                    <div class="paragraph-container">
+                        <input type="checkbox" id="read-more3">
+                        <p class="paragraph-text">Elevate your style with our stunning bangles, crafted to add a touch of elegance and sophistication to any outfit.</p>
+                        <div class="fade-overlay"></div>
+                        <label for="read-more3" class="read-more-btn"></label>
+                    </div>
+                </div>
+                <div class="bc">
+                    <img src="NEPRABYNEHAGOEL_29.webp" alt="Description">
+                    <div class="paragraph-container">
+                        <input type="checkbox" id="read-more4">
+                        <p class="paragraph-text">Add a touch of sparkle and sophistication to your look with our exquisite earrings. From elegant studs to bold drops, our collection offers something for everyone.</p>
+                        <div class="fade-overlay"></div>
+                        <label for="read-more4" class="read-more-btn"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="How-to-Start-Jewellery-Business-in-India-2024.jpg" alt="Description">
+        </div>
+    </div>
+    <div class="features">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>100% Certified Jewellery</li>
+            <li>Easy Returns</li>
+            <li>Free Shipping</li>
+            <li>24/7 Customer Support</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="h1">
+            <h1>TOKEN OF LOVE</h1>
+        </div>
+        <div class="image6">
+            <img src="istockphoto-961009174-612x612.jpg" alt="Description">
+        </div>
+    </div>
+</body>
+</html>
